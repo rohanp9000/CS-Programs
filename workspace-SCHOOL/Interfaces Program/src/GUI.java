@@ -126,7 +126,7 @@ public class GUI extends GBFrame {
 
 					cn3 = (ComplexNumber)cn1.add(cn2);
 
-					outputField.setText(cn3.toString("difference"));
+					outputField.setText(cn3.toString("sum"));
 					clearFields();
 
 				}catch(Exception e){
@@ -232,7 +232,7 @@ public class GUI extends GBFrame {
 
 					cn3 = (ComplexNumber)cn1.multiply(cn2);
 
-					outputField.setText(cn3.toString("difference"));
+					outputField.setText(cn3.toString("product"));
 					clearFields();
 
 				}catch(Exception e){
@@ -284,7 +284,7 @@ public class GUI extends GBFrame {
 
 					cn3 = (ComplexNumber)cn1.divide(cn2);
 
-					outputField.setText(cn3.toString("difference"));
+					outputField.setText(cn3.toString("quotient"));
 					clearFields();
 
 				}catch(Exception e){

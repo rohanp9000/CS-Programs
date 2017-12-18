@@ -66,8 +66,8 @@ public class ComplexFraction implements Number {
 		ComplexFraction c = new ComplexFraction(0, 1, 0, 1);
 
 		if(num instanceof ComplexFraction){
-			rDiff = (Fraction) ((ComplexFraction)num).getReal().subtract(getReal());
-			iDiff = (Fraction) ((ComplexFraction)num).getImaginary().subtract(getImaginary());
+			rDiff = (Fraction) getReal().subtract(((ComplexFraction)num).getReal());
+			iDiff = (Fraction) getImaginary().subtract(((ComplexFraction)num).getImaginary());
 
 			c.setReal(rDiff);
 			c.setImaginary(iDiff);
